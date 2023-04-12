@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusbyHPokemonAPI</title>
+    <link rel="icon" type="image/x-icon" href="./Assets/PokeballFavicon.jpg">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body id='bodyBackground' class="homePageBackground">
+
+    <div id='homePageTitle' class="titleBeginning mt-5 center">Generation 1-5 Pokemon API</div>
+    <div class="alignRight"><button type="button" id='homeBtn' class="hide homeBtn btn-hover mt-5">Home</button></div>
+    <div class="alignRight"><button type="button" id='favoriteBtn' class="hide homeBtn btn-hover mt-5">Get Favorites</button></div>
+
+    <div class="center">
+        <button type="button" id='regularPokemonBtn' class=" width2 btnBeginning1 btn-hover mt-10">Lets get a Pokemon!</button>
+    </div>
+
+    <div class="grid-cols-2 gap-x-4">
+
+        <input class='hide' style='margin-left: 126px;' type="text" id="actualPokemon" placeholder="Enter a Pokemon">
+        <button type="button" id='searchBtn' class="hide btnBeginning2 btn-hover searchBtnIcon"></button>
+        <button type="button" id='randomBtn' class="hide btnBeginning3 btn-hover">Random Pokemon</button>
+        <div id="over650" class="spriteBackgroundText center"></div>
+    </div>
+
+    <div id='pokemonShown' class="spriteBackground grid-cols-2 hide">
+        <div class='spriteBackgroundText pokemonNameBackground width1' id="pokemonSpriteName"></div>
+        <!-- Sprite -->
+        <div id="pokemonSpriteShown"></div>
+        <div id="pokemonSpriteShinyShown"></div>
+        <!-- Habitat and typing -->
+        <div class='spriteBackgroundText' id="pokemonTyping"></div>
+        <div class='spriteBackgroundText' id="pokemonTyping2"></div>
+        <div class='spriteBackgroundText2 pokemonNameBackground width1 marginTop1 center' id="pokemonHabitat"></div>
+        <div id="evolutionChain" class="spriteBackgroundText2 "></div>
+        
+    </div>
+
+    <!-- First Dropdown -->
+    <div class="center grid-cols-4 gap-x-16 mt-5">
+
+        <div id='abilityDropdown' class="dropdown hide abilityDropdownBackground">
+            <span class="center">Abilities</span>
+            <div class="dropdown-content">
+                <p class='dropdownText' id="abilityDropdownLabel"></p>
+            </div>
+        </div>
+        <button type="button" id='addBtn' class="hide btnBeginning3 btn-hover">Favorite</button>
+
+        <!-- Second Dropdown -->
+        <div id='moveDropdown' class="dropdown hide abilityDropdownBackground">
+            <span class="center">Moves</span>
+            <div class="dropdown-content">
+                <p class='dropdownText width1' id="moveDropdownLabel"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id='favoritesSideBar' class="hide sidebar mt-5 pokemonNameBackground2">
+        <ul>
+          <button type="button" class='spriteBackgroundText2 btnBeginning3' id="favorites1"></button>
+        </ul>
+      </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="./scripts/app.js" type="module"></script>
+
+</html>

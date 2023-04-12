@@ -1,0 +1,592 @@
+@media screen and (min-width: 420px) and (max-width: 720px) {
+    body {
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  
+    .header {
+      display: none;
+    }
+  
+    .width2{
+      width: 50px;
+    }
+  
+    .titleBeginning{
+      display: flex;
+      justify-content: center;
+      width: 300px;
+      
+    }
+  
+    .btnBeginning1{
+      font-family: LeagueGothic;
+      font-size: 10px;
+      color: white;
+      background-color: black;
+      padding: 5px;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: inset;
+  
+  }
+  
+    
+  }
+  
+  /* This media query sets different styles for screen widths between 720px and 1280px */
+  @media screen and (min-width: 720px) and (max-width: 1280px) {
+    body {
+      font-size: 18px;
+    }
+  
+    .header {
+      display: block;
+    }
+  }
+  
+  /* This media query sets different styles for screen widths greater than 1280px */
+  @media screen and (min-width: 1280px) {
+    body {
+      font-size: 20px;
+    }
+  
+    .header {
+      display: flex;
+    }
+  }
+  
+  
+  @font-face {
+      font-family: LeagueGothic;
+      src: url(../Fonts/LeagueGothic-Regular.ttf);
+  }
+  
+  
+  
+  
+  
+  .titleBeginning{
+      font-family: LeagueGothic;
+      font-size: 50px;
+      color: white;
+      background-color: red;
+      margin-left: 150px;
+      margin-right: 150px;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: inset;
+  
+  }
+  
+  .btnBeginning1{
+      font-family: LeagueGothic;
+      font-size: 30px;
+      color: white;
+      background-color: black;
+      padding: 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: inset;
+  
+  }
+  
+  .btnBeginning2{
+     
+      padding:17px;
+      border-radius: 10px;
+      cursor: pointer;
+  
+  }
+  
+  .btnBeginning3{
+     
+      padding:5px;
+      border-radius: 10px;
+      background-color: black;
+      color: white;
+      font-family: LeagueGothic;
+      cursor: pointer;
+  
+  }
+  
+  .btnBeginning3:hover{
+    background-color: gray;
+    color: black;
+    box-shadow: inset;
+  
+  
+  }
+  
+  .homeBtn{
+      font-family: LeagueGothic;
+      font-size: 20px;
+      color: black;
+      background-color: white;
+      padding: 5px;
+      width: 100px;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: inset;
+      margin-right: 50px;
+  
+  }
+  
+  .homeBtn:hover{
+      background-color: gray;
+      color: black;
+      box-shadow: inset;
+    }
+  
+  .btnBeginning1:hover{
+      background-color: gray;
+      color: white;
+      box-shadow: inset;
+    }
+  
+  .homePageBackground{
+      background-image: url(../Assets/Pokeball.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+  
+  }
+  
+  .pokemonPagesBackground{
+      background-image: url(../Assets/PokemonBackground.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+  }
+  
+  .abilityDropdownBackground{
+      font-family: LeagueGothic;
+      font-size: 20px;
+      color: white;
+      background-color: #00B5C0;
+      padding: 5px;
+      width: 250px;
+      
+      text-align: center;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: inset;
+      margin-right: 50px;
+  }
+  
+  .spriteBackground{
+     
+      background-color: #00B5C0;
+      padding: 20px;
+      border-radius: 10px;
+      margin-left: 125px;
+      margin-right: 125px;
+      
+      
+  }
+  
+  .spriteBackgroundText{
+      font-family: LeagueGothic;
+      font-size: 50px;
+      color: white;
+      height: 75px;
+  }
+  
+  .spriteBackgroundText2{
+      font-family: LeagueGothic;
+      font-size: 40px;
+      color: white;
+      height: 75px;
+  }
+  
+  .searchBtnIcon{
+      background-image: url(../Assets/PokeballFavicon.jpg);
+      background-size: cover;
+  }
+  
+  .dropdownText{
+      color: black;
+      
+  }
+  
+  
+  .hide{
+      display: none;
+  }
+  
+  .center{
+      display: flex;
+      justify-content: center;
+  }
+  
+  .alignRight{
+     display: flex;
+      justify-content: right;
+  }
+  
+  .marginLeft1{
+      margin-left: 20px;
+  }
+  
+  
+  /* ----------------------------------------------------------- */
+  
+  .dropdown {
+      position: relative;
+      
+    }
+  
+    .sidebar {
+      height: 200px;
+      overflow-y: scroll;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 12px 16px;
+      z-index: 1;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+    /* Typing Colors */
+  
+    .poisonType{
+      background-color: rgb(118, 11, 118);
+      font-family: LeagueGothic;
+      color: white;
+      height: 75px;
+      font-size: 50px;
+    }
+  
+    .normalType{
+      background-color: gray;
+      font-family: LeagueGothic;
+      color: white;
+      height: 75px;
+      font-size: 50px;
+    }
+  
+    .grassType{
+      background-color: green;
+      font-family: LeagueGothic;
+      color: white;
+      height: 75px;
+      font-size: 50px;
+    }
+  
+    .fireType{
+      background-color: orangered;
+      font-family: LeagueGothic;
+      color: white;
+      height: 75px;
+      font-size: 50px;
+    }
+    
+    .waterType{
+      background-color: rgb(0, 104, 168);
+      font-family: LeagueGothic;
+      color: white;
+      height: 75px;
+      font-size: 50px;
+    }
+  
+    .darkType{
+      background-color: black;
+      font-family: LeagueGothic;
+      color: white;
+      height: 75px;
+      font-size: 50px;
+    }
+  
+    .psychicType{
+      background-color: magenta;
+      font-family: LeagueGothic;
+      color: white;
+      height: 75px;
+      font-size: 50px;
+    }
+  
+    .fightingType{
+      background-color: brown;
+      font-family: LeagueGothic;
+      color: white;
+      height: 75px;
+      font-size: 50px;
+    }
+  
+    .steelType{
+      background-color: silver;
+      font-family: LeagueGothic;
+      color: white;
+      height: 75px;
+      font-size: 50px;
+    }
+  
+    .fairyType{
+      background-color: pink;
+      font-family: LeagueGothic;
+      color: white;
+      height: 75px;
+      font-size: 50px;
+    }
+  
+    .electricType{
+      background-color: yellow;
+      color: black;
+      font-family: LeagueGothic;
+      color: white;
+      height: 75px;
+      font-size: 50px;
+    }
+  
+    .ghostType{
+      background-color: purple;
+      font-family: LeagueGothic;
+      color: white;
+      height: 75px;
+      font-size: 50px;
+    }
+  
+    .dragonType{
+      background-color: blueviolet;
+      font-family: LeagueGothic;
+      color: white;
+      height: 75px;
+      font-size: 50px;
+    }
+  
+    .iceType{
+      background-color: rgb(0, 225, 255);
+      font-family: LeagueGothic;
+      color: white;
+      height: 75px;
+      font-size: 50px;
+    }
+  
+    .rockType{
+      background-color: rgb(110, 61, 0);
+      font-family: LeagueGothic;
+      color: white;
+      height: 75px;
+      font-size: 50px;
+    }
+  
+    .groundType{
+      background-color: rgb(255, 132, 0);
+      font-family: LeagueGothic;
+      color: white;
+      height: 75px;
+      font-size: 50px;
+    }
+  
+    .flyingType{
+      background-color: rgb(192, 192, 192);
+      color: black;
+      font-family: LeagueGothic;
+      font-size: 50px;
+      height: 75px;
+    }
+  
+    .bugType{
+      background-color: rgb(161, 255, 94);
+      font-family: LeagueGothic;
+      color: white;
+      height: 75px;
+      font-size: 50px;
+    }
+  
+    .marginTop1{
+      margin-top: 250px;
+      
+    }
+  
+    .width1{
+      width: 400px;
+    }
+  
+    .width2{
+      width: 500px;
+      height: 300px;
+      margin-top: 200px;
+    }
+  
+    .pokemonNameBackground{
+      background-color: rgba(0, 0, 0, .6);
+      border-radius: 20px;
+    }
+  
+    .pokemonNameBackground2{
+      background-color: rgba(0, 0, 0, .6);
+      border-radius: 20px;
+      width: 500px;
+    }
+  
+    .pokemonNameBackground3{
+      margin-top: 30px;
+      background-color: rgba(0, 0, 0, .6);
+      border-radius: 20px;
+      width: 500px;
+      font-family: LeagueGothic;
+      color: white;
+      font-size: 20px;
+    }
+  
+    .pokemonNameBackground3:hover{
+      background-color: gray;
+      color: black;
+      box-shadow: inset;
+    }
+  
+    @font-face {
+      font-family: LeagueGothic;
+    
+      src: url(../Fonts/LeagueGothic-Regular.ttf);
+    }
+    
+    .titleBeginning{
+      font-family: LeagueGothic;
+      font-size: 50px;
+      color: white;
+      background-color: red;
+      margin-left: 150px;
+      margin-right: 150px;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: inset;
+    }
+    
+    .btnBeginning1{
+      font-family: LeagueGothic;
+      font-size: 30px;
+      color: white;
+      background-color: black;
+      padding: 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: inset;
+    }
+    
+    .btnBeginning2{
+      padding:17px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    
+    .homeBtn{
+      font-family: LeagueGothic;
+      font-size: 20px;
+      color: black;
+      background-color: white;
+      padding: 5px;
+      width: 100px;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: inset;
+      margin-right: 50px;
+    }
+    
+    .homeBtn:hover{
+      background-color: gray;
+      color: black;
+      box-shadow: inset;
+    }
+    
+    .btnBeginning1:hover{
+      background-color: gray;
+      color: white;
+      box-shadow: inset;
+    }
+    
+    .homePageBackground{
+      background-image: url(../Assets/Pokeball.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    
+    .pokemonPagesBackground{
+      background-image: url(../Assets/PokemonBackground.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    
+    .abilityDropdownBackground{
+      font-family: LeagueGothic;
+      font-size: 20px;
+      color: white;
+      background-color: #00B5C0;
+      padding: 5px;
+      width: 100px;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: inset;
+      margin-right: 50px;
+    }
+    
+    .spriteBackground{
+      background-color: #00B5C0;
+      padding: 20px;
+      border-radius: 10px;
+      margin-left: 125px;
+      margin-right: 125px;
+    }
+    
+    .spriteBackgroundText{
+      font-family: LeagueGothic;
+      font-size: 50px;
+      color: white;
+    }
+    
+    .searchBtnIcon{
+      background-image: url(../Assets/PokeballFavicon.jpg);
+      background-size: cover;
+    }
+    
+    .dropdownText{
+      color: black;
+    }
+    
+    .hide{
+      display: none;
+    }
+    
+    .center{
+      display: flex;
+      justify-content: center;
+    }
+    
+    .alignRight{
+      display: flex;
+      justify-content: right;
+    }
+    
+    .marginLeft1{
+      margin-left: 20px;
+    }
+    
+    /* ----------------------------------------------------------- */
+    
+    .dropdown {
+      position: relative;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 12px 16px;
+      z-index: 1;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+  
+    
